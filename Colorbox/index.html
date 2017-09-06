@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="colorbox.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="jquery.colorbox.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".gallery").colorbox({rel:"gallery"});
+                $(".gallery2").colorbox({rel:"gallery2", transition:"fade"});
+                $(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+            });
+        </script>
+    </head>
+    <body>
+        <h2>Elastic Transition</h2>
+        <a class='gallery' href='image1.jpg'>Photo_1</a>
+        <a class='gallery' href='image2.jpg'>Photo_2</a>
+        <a class='gallery' href='image3.jpg'>Photo_3</a>
+
+        <h2>Fade Transition</h2>
+        <a class='gallery2' href='image1.jpg'>Photo_1</a>
+        <a class='gallery2' href='image2.jpg'>Photo_2</a>
+        <a class='gallery2' href='image3.jpg'>Photo_3</a>
+
+        <h2>Youtube</h2>
+        <a class='youtube' href="http://www.youtube.com/embed/VOJyrQa_WR4?rel=0&amp;wmode=transparent">Flash / Video (Iframe/Direct Link To YouTube)</a>
+    </body>
+</html>
